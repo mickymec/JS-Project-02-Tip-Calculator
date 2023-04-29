@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(20, 20, 20);
+}
+
+.box {
+    background: rgb(15, 15, 15);
+    width: 30%;
+    height: fit-content;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+small {
+    color: #999;
+    font-size: 15px;
+    font-weight: 400;
+}   
+
+.inputbox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    padding: 0 10px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 2px;
+    transition: 0.3s ease-out;
+}
+
+.inputbox:hover{
+    
+    border: 1px solid #b0b0b0;
+}
+
+.inputbox:hover i {
+    color: #b0b0b0;
+}
+
+.inputbox i {
+    color: #444;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: 0.3s ease-out;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #333;
+    /* padding: 0 2px; */
+    font-size: 15px;
+    transition: 0.3s ease-out;
+}
+
+input[type="text"]:focus {
+    color: #fff;
+}
+
+input:active::placeholder {
+    color: #fff;
+}
+
+
+
+.amount-people {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.amount-people .numberofpeople {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.numberofpeople i {
+    color: #333;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.1s ease-out;
+}
+
+.numberofpeople i:hover,
+.numberofpeople i:active {
+    color: #999;
+}
+
+.numberofpeople i:active {
+    transform: scale(0.95);
+    color: #666;
+}
+
+.numberofpeople #numberOfPeople {
+    color: #cfcfcf;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+}
+
+.totalamount h2 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.totalamount .amount {
+    color: #fff;
+    font-size: 18px;
+}
+
+@media screen and (max-width : 500px) {
+    .box {
+        width: 90%;
+    }
+
+    .totalamount h2 {
+        font-size: 17px;
+        margin-right: 0px;
+    }
+
+    .totalamount .amount {
+        font-size: 15px;
+    }
+
+    .numberofpeople #numberOfPeople {
+        font-size: 16px;
+    } 
+}

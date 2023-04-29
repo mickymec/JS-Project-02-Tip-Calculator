@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Click Counnter</title>
+</head>
+
+<body>
+  <div class="container">
+    <div data-aos="fade-up" class="box">
+      <small>Enter Amount</small>
+      <div class="inputbox">
+        <i class='bx bx-dollar'></i>
+        <!-- <div class="input"></div> -->
+        <input onkeyup="calculateBill()" type="text" id="amountInput" placeholder="00">
+      </div>
+      <small>Enter Tip</small>
+      <div class="inputbox">
+        <i class='bx bx-dollar'></i>
+        <input onkeyup="calculateBill()" type="text" id="tipInput" placeholder="10">
+      </div>
+
+      <div class="amount-people">
+
+        <div class="numberofpeople">
+          <i class='bx bxs-minus-circle' id="decrement" onclick="decreasePeople()"></i>
+          <div id="numberOfPeople"> 1 </div>
+          <i class='bx bxs-plus-circle' id="increment" onclick="increasePeople()"></i>
+        </div>
+
+        <div class="totalamount">
+          <h2>Total Amount</h2>
+          <div class="amount">$ <span id="Amount">00.00</span></div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+  <script src="locomotive-scroll.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
